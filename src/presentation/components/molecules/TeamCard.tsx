@@ -7,7 +7,7 @@ interface TeamCardProps {
 
 export function TeamCard({ member }: TeamCardProps) {
   return (
-    <article className="team-card group flex h-full flex-col gap-5 rounded-2xl border border-foreground/10 bg-surface-alt p-6 shadow-soft transition-all duration-300 hover:-translate-y-1.5 hover:scale-[1.02] hover:border-secondary/70 hover:shadow-[0_0_24px_rgba(248,148,73,0.14)]">
+    <article className="team-card group flex h-full flex-col gap-5 rounded-2xl border border-foreground/10 bg-gradient-to-br from-surface-alt via-surface-alt via-25% to-primary p-6 shadow-soft transition-all duration-300 hover:-translate-y-1.5 hover:scale-[1.02] hover:border-secondary/70 hover:shadow-[0_0_24px_rgba(248,148,73,0.14)]">
       <img
         src={member.image}
         alt={`Foto de ${member.name}`}
