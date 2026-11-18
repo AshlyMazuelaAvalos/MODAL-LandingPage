@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ---------- Design tokens (canales RGB para soportar opacidad: bg-primary/20) ---------- */
+:root {
+  --color-primary: 230 80 20; /* #E65014 */
+  --color-secondary: 248 148 73; /* #F89449 */
+  --color-surface: 9 8 34; /* #090822 */
+  --color-surface-alt: 19 18 61; /* #13123D */
+  --color-foreground: 239 229 219; /* #EFE5DB */
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 5rem; /* compensa el navbar fijo */
+  }
+
+  body {
+    @apply bg-surface font-sans text-foreground antialiased;
+  }
+
+  ::selection {
+    @apply bg-primary/40 text-foreground;
+  }
+
+  :focus-visible {
+    @apply outline-2 outline-offset-2 outline-secondary;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation: none !important;
+    transition-duration: 0.01ms !important;
+  }
+}
