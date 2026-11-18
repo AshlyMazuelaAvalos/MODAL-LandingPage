@@ -12,7 +12,7 @@ export function HeroSection({ project }: HeroSectionProps) {
   return (
     <section
       id="inicio"
-      className="relative overflow-hidden pt-30 pb-30 sm:pt-40"
+      className="relative overflow-hidden pt-24 pb-24 sm:pt-40"
     >
       <div
         aria-hidden="true"
