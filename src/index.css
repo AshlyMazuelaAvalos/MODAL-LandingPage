@@ -36,6 +36,45 @@
   animation-delay: 0.9s;
 }
 
+.loading-screen {
+  animation: loading-screen-exit 3s ease-in-out forwards;
+}
+
+.loading-screen__logo {
+  opacity: 0;
+  animation: loading-logo-appear 500ms ease-out forwards;
+}
+
+.loading-screen__progress {
+  animation: loading-progress 2.65s cubic-bezier(0.65, 0, 0.35, 1) forwards;
+}
+
+@keyframes loading-screen-exit {
+  0%,
+  88% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+@keyframes loading-logo-appear {
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes loading-progress {
+  from {
+    transform: scaleX(0);
+  }
+  to {
+    transform: scaleX(1);
+  }
+}
+
 @keyframes team-card-wave {
   0% {
     opacity: 0.7;
