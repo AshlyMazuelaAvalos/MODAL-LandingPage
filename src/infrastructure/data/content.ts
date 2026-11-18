@@ -1,13 +1,13 @@
 import anidLogo from "@/assets/icons/LOGOS MINCIENCIA + ANID 2026_PLUMA-BLANCO.svg";
-import universidadValparaisoLogo from "@/assets/Images/uv_logo_alta_rgba_blanco-2023.png";
-import reneImage from "@/assets/Images/team/Rene.jpeg";
-import diegoImage from "@/assets/Images/team/Diego.jpeg";
-import sheylaImage from "@/assets/Images/team/Sheyla.jpeg";
-import carlosImage from "@/assets/Images/team/Carlos.jpeg";
-import raidelImage from "@/assets/Images/team/Raidel.jpeg";
-import salvadorImage from "@/assets/Images/team/Salvador.png";
 import ashlyImage from "@/assets/Images/team/Ashly.jpeg";
+import carlosImage from "@/assets/Images/team/Carlos.jpeg";
+import diegoImage from "@/assets/Images/team/Diego.jpeg";
 import natanielImage from "@/assets/Images/team/Nataniel.jpeg";
+import raidelImage from "@/assets/Images/team/Raidel.jpeg";
+import reneImage from "@/assets/Images/team/Rene.jpeg";
+import salvadorImage from "@/assets/Images/team/Salvador.png";
+import sheylaImage from "@/assets/Images/team/Sheyla.jpeg";
+import universidadValparaisoLogo from "@/assets/Images/uv_logo_alta_rgba_blanco-2023.png";
 import type {
   Acknowledgment,
   NavLink,
@@ -89,7 +89,7 @@ export const team: TeamMember[] = [
     id: "diego",
     name: "Diego Gatica Pizarro",
     image: diegoImage,
-    role: "Estudiante de Doctorado",
+    role: "Estudiante de Magister",
     bio: "Sistematiza la toma de decisiones arquitectónicas y trade-offs de calidad mediante metamodelos y agentes de IA.",
     links: [
       {
