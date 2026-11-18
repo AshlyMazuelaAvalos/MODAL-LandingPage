@@ -1,5 +1,4 @@
 import type { TeamMember } from "@/domain/models";
-import { Avatar } from "../atoms/Avatar";
 import { Icon } from "../atoms/Icon";
 
 interface TeamCardProps {
@@ -8,8 +7,12 @@ interface TeamCardProps {
 
 export function TeamCard({ member }: TeamCardProps) {
   return (
-    <article className="group flex h-full flex-col gap-5 rounded-2xl border border-foreground/10 bg-surface-alt p-6 shadow-soft transition-all duration-300 hover:-translate-y-1.5 hover:border-secondary/60">
-      <Avatar name={member.name} />
+    <article className="team-card group flex h-full flex-col gap-5 rounded-2xl border border-foreground/10 bg-surface-alt p-6 shadow-soft transition-all duration-300 hover:-translate-y-1.5 hover:scale-[1.02] hover:border-secondary/70 hover:shadow-[0_0_24px_rgba(248,148,73,0.14)]">
+      <img
+        src={member.image}
+        alt={`Foto de ${member.name}`}
+        className="h-20 w-20 shrink-0 self-center rounded-2xl border-2 border-secondary/50 object-cover transition-all duration-300 group-hover:scale-105 group-hover:border-primary"
+      />
       <div className="space-y-1">
         <h3 className="text-xl font-bold text-foreground">{member.name}</h3>
         <p className="text-sm font-semibold text-secondary">{member.role}</p>

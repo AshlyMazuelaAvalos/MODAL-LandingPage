@@ -1,5 +1,13 @@
 import anidLogo from "@/assets/icons/LOGOS MINCIENCIA + ANID 2026_PLUMA-BLANCO.svg";
 import universidadValparaisoLogo from "@/assets/Images/uv_logo_alta_rgba_blanco-2023.png";
+import reneImage from "@/assets/Images/team/Rene.jpeg";
+import diegoImage from "@/assets/Images/team/Diego.jpeg";
+import sheylaImage from "@/assets/Images/team/Sheyla.jpeg";
+import carlosImage from "@/assets/Images/team/Carlos.jpeg";
+import raidelImage from "@/assets/Images/team/Raidel.jpeg";
+import salvadorImage from "@/assets/Images/team/Salvador.png";
+import ashlyImage from "@/assets/Images/team/Ashly.jpeg";
+import natanielImage from "@/assets/Images/team/Nataniel.jpeg";
 import type {
   Acknowledgment,
   NavLink,
@@ -65,6 +73,7 @@ export const team: TeamMember[] = [
   {
     id: "rene",
     name: "René Noël",
+    image: reneImage,
     role: "Investigador Principal (PI)",
     bio: "Lidera el proyecto FONDECYT 11251489, dirigiendo el diseño y validación de métodos dirigidos por modelos para microservicios y low-code.",
     links: [
@@ -79,7 +88,8 @@ export const team: TeamMember[] = [
   {
     id: "diego",
     name: "Diego Gatica Pizarro",
-    role: "Decisiones de Arquitectura e IA",
+    image: diegoImage,
+    role: "Estudiante de Doctorado",
     bio: "Sistematiza la toma de decisiones arquitectónicas y trade-offs de calidad mediante metamodelos y agentes de IA.",
     links: [
       {
@@ -92,7 +102,8 @@ export const team: TeamMember[] = [
   {
     id: "sheyla",
     name: "Sheyla Torres",
-    role: "Ingeniería de Métodos (SME + LLMs)",
+    image: sheylaImage,
+    role: "Estudiante de Doctorado",
     bio: "Diseña métodos situacionales por ensamblaje para integrar agentes LLM y equipos humanos bajo un mismo flujo de trabajo.",
     links: [
       {
@@ -105,7 +116,8 @@ export const team: TeamMember[] = [
   {
     id: "carlos",
     name: "Carlos Escobedo",
-    role: "Transformación de Modelos (BPMN → UML)",
+    image: carlosImage,
+    role: "Ayudante de Investigación",
     bio: "Desarrolla plugins en Camunda Modeler para derivar modelos de dominio UML/DDD de forma determinista desde procesos de negocio.",
     links: [
       {
@@ -118,7 +130,8 @@ export const team: TeamMember[] = [
   {
     id: "raidel",
     name: "Raidel Rodríguez",
-    role: "Rediseño de Procesos con IA",
+    image: raidelImage,
+    role: "Estudiante de Doctorado",
     bio: "Construye sistemas multiagente con memoria semántica y procedural para asistir el rediseño estratégico de procesos en PyMEs.",
     links: [
       {
@@ -131,7 +144,8 @@ export const team: TeamMember[] = [
   {
     id: "salvador",
     name: "Salvador Gallardo",
-    role: "Generación de Código Multiagente (DOMUS)",
+    image: salvadorImage,
+    role: "Ayudante de Investigación",
     bio: "Orquesta agentes especializados anclados en modelos UML como fuente de verdad para generar código verificable y trazable.",
     links: [
       {
@@ -144,7 +158,8 @@ export const team: TeamMember[] = [
   {
     id: "ashly",
     name: "Ashly Mazuela",
-    role: "Metodologías Ágiles Híbridas (AgileFlow UV)",
+    image: ashlyImage,
+    role: "Ayudante de Investigación",
     bio: "Adapta prácticas ágiles con protocolos éticos de trazabilidad para integrar el uso responsable de IA generativa en equipos de desarrollo.",
     links: [
       {
@@ -157,8 +172,9 @@ export const team: TeamMember[] = [
   {
     id: "nataniel",
     name: "Nataniel Palacios",
-    role: "Investigador Asociado",
-    bio: "Contribuye al desarrollo y validación de soluciones dentro de la línea de ingeniería de software dirigida por modelos.",
+    image: natanielImage,
+    role: "Estudiante de Pregrado",
+    bio: "Diseña un marco multinivel (CIM → PIM → PSM) para integrar y gobernar agentes de IA en proyectos de software de forma trazable e independiente de la plataforma.",
     links: [
       {
         label: "LinkedIn",

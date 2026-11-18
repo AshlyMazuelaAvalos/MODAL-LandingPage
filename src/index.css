@@ -11,6 +11,42 @@
   --color-foreground: 239 229 219; /* #EFE5DB */
 }
 
+.team-card {
+  isolation: isolate;
+}
+
+.team-card::before,
+.team-card::after {
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  border: 1px solid rgb(var(--color-secondary) / 0.75);
+  border-radius: inherit;
+  content: "";
+  opacity: 0;
+  pointer-events: none;
+}
+
+.team-card:hover::before,
+.team-card:hover::after {
+  animation: team-card-wave 1.8s ease-out infinite;
+}
+
+.team-card:hover::after {
+  animation-delay: 0.9s;
+}
+
+@keyframes team-card-wave {
+  0% {
+    opacity: 0.7;
+    transform: scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(1.06);
+  }
+}
+
 @layer base {
   html {
     scroll-behavior: smooth;

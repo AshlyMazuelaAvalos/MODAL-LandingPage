@@ -1,9 +1,9 @@
-import type { TeamMember } from '@/domain/models'
-import { SectionTitle } from '../atoms/SectionTitle'
-import { TeamCard } from '../molecules/TeamCard'
+import type { TeamMember } from "@/domain/models";
+import { SectionTitle } from "../atoms/SectionTitle";
+import { TeamCard } from "../molecules/TeamCard";
 
 interface TeamSectionProps {
-  members: TeamMember[]
+  members: TeamMember[];
 }
 
 export function TeamSection({ members }: TeamSectionProps) {
@@ -13,7 +13,7 @@ export function TeamSection({ members }: TeamSectionProps) {
         <SectionTitle
           badge="Equipo"
           title="Las personas detrás"
-          highlight="del producto"
+          highlight="del proyecto"
           description="Un equipo multidisciplinario que combina estrategia, diseño e ingeniería para entregar resultados medibles."
         />
         <div className="mt-14 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
@@ -23,5 +23,5 @@ export function TeamSection({ members }: TeamSectionProps) {
         </div>
       </div>
     </section>
-  )
+  );
 }

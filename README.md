@@ -1,6 +1,6 @@
-# Dottex Landing — React + TypeScript + Tailwind
+# model Landing — React + TypeScript + Tailwind
 
-SPA con Clean Architecture y Atomic Design. Estética oscura corporativo-tecnológica inspirada en la landing de Dottex (Behance, versión 2023).
+Landing page de MODAL 4SE, equipo de investigación de la Universidad de Valparaíso dedicado al desarrollo de software dirigido por modelos, microservicios y inteligencia artificial generativa.
 
 ## Uso
 
@@ -14,13 +14,13 @@ npm run build      # typecheck + build de producción
 
 Definidos como variables CSS (canales RGB) en `src/index.css` y expuestos como colores semánticos en `tailwind.config.js`:
 
-| Token | Valor | Uso |
-|---|---|---|
-| `primary` | `#E65014` | Títulos destacados, botones principales |
-| `secondary` | `#F89449` | Acentos, badges, hover |
-| `surface` | `#090822` | Fondo principal |
-| `surface-alt` | `#13123D` | Tarjetas y secciones alternas |
-| `foreground` | `#EFE5DB` | Texto (secundario con `/70`) |
+| Token         | Valor     | Uso                                     |
+| ------------- | --------- | --------------------------------------- |
+| `primary`     | `#E65014` | Títulos destacados, botones principales |
+| `secondary`   | `#F89449` | Acentos, badges, hover                  |
+| `surface`     | `#090822` | Fondo principal                         |
+| `surface-alt` | `#13123D` | Tarjetas y secciones alternas           |
+| `foreground`  | `#EFE5DB` | Texto (secundario con `/70`)            |
 
 ## Arquitectura
 
